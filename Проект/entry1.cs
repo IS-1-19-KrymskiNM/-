@@ -88,7 +88,7 @@ namespace Проект
                     GetUserInfo(Au_login.Text);
                     //Вызов формы в режиме диалога
                     Hide();
-                    Main m = new Main();
+                    Main m = new Main(); 
                     m.Show();
                 }
                 else
