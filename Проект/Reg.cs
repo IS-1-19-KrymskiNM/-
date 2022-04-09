@@ -52,7 +52,7 @@ namespace Проект
             MySqlCommand newrec = new MySqlCommand(sql_new, Classes.DBConn.conn);
             Classes.DBConn.conn.Open();
             newrec.Parameters.Add("@un", MySqlDbType.VarChar, 25);
-            newrec.Parameters.Add("@up", MySqlDbType.VarChar, 25);
+            newrec.Parameters.Add("@up", MySqlDbType.VarChar, 25);  
             //Присваиваем параметрам значение
             newrec.Parameters["@un"].Value = login.Text;
             newrec.Parameters["@up"].Value = Classes.Encryption.Sha256(password.Text);
