@@ -50,10 +50,6 @@ namespace Проект
             Hide();
         }
 
-        private void entry1_Load(object sender, EventArgs e)
-        {
-
-        }
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             {

@@ -39,10 +39,7 @@ namespace Проект
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.Au_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.Au_login = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label
@@ -70,7 +67,8 @@ namespace Проект
             // 
             this.guna2Button1.Animated = true;
             this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 14;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 12;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -78,18 +76,20 @@ namespace Проект
             this.guna2Button1.FillColor = System.Drawing.Color.LightGray;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(96, 261);
+            this.guna2Button1.IndicateFocus = true;
+            this.guna2Button1.Location = new System.Drawing.Point(132, 244);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(117, 31);
+            this.guna2Button1.Size = new System.Drawing.Size(123, 27);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Вход";
+            this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 42);
+            this.label1.Location = new System.Drawing.Point(66, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 44);
             this.label1.TabIndex = 5;
@@ -110,10 +110,10 @@ namespace Проект
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline);
             this.guna2Button2.ForeColor = System.Drawing.Color.Blue;
             this.guna2Button2.IndicateFocus = true;
-            this.guna2Button2.Location = new System.Drawing.Point(96, 298);
+            this.guna2Button2.Location = new System.Drawing.Point(132, 277);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Size = new System.Drawing.Size(117, 27);
+            this.guna2Button2.Size = new System.Drawing.Size(123, 27);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Регистрация";
             this.guna2Button2.UseTransparentBackground = true;
@@ -123,6 +123,8 @@ namespace Проект
             // 
             this.Au_password.Animated = true;
             this.Au_password.AutoRoundedCorners = true;
+            this.Au_password.BackColor = System.Drawing.Color.Transparent;
+            this.Au_password.BorderColor = System.Drawing.Color.Transparent;
             this.Au_password.BorderRadius = 20;
             this.Au_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Au_password.DefaultText = "";
@@ -132,10 +134,12 @@ namespace Проект
             this.Au_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Au_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Au_password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Au_password.ForeColor = System.Drawing.Color.Transparent;
             this.Au_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Au_password.Location = new System.Drawing.Point(32, 192);
+            this.Au_password.Location = new System.Drawing.Point(85, 168);
             this.Au_password.Name = "Au_password";
             this.Au_password.PasswordChar = '\0';
+            this.Au_password.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.Au_password.PlaceholderText = "Введите пароль";
             this.Au_password.SelectedText = "";
             this.Au_password.Size = new System.Drawing.Size(233, 42);
@@ -155,7 +159,7 @@ namespace Проект
             this.Au_login.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Au_login.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Au_login.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Au_login.Location = new System.Drawing.Point(32, 131);
+            this.Au_login.Location = new System.Drawing.Point(85, 107);
             this.Au_login.Name = "Au_login";
             this.Au_login.PasswordChar = '\0';
             this.Au_login.PlaceholderText = "Введите логин ";
@@ -163,44 +167,24 @@ namespace Проект
             this.Au_login.Size = new System.Drawing.Size(233, 42);
             this.Au_login.TabIndex = 2;
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2Panel1.Controls.Add(this.Au_login);
-            this.guna2Panel1.Controls.Add(this.Au_password);
-            this.guna2Panel1.Controls.Add(this.guna2Button2);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Location = new System.Drawing.Point(572, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(307, 365);
-            this.guna2Panel1.TabIndex = 6;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.guna2Panel2.Location = new System.Drawing.Point(555, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(341, 384);
-            this.guna2Panel2.TabIndex = 8;
-            // 
             // entry1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1394, 740);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.Au_login);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.Au_password);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MaximizeBox = false;
             this.Name = "entry1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.entry1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -213,8 +197,6 @@ namespace Проект
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2TextBox Au_password;
         private Guna.UI2.WinForms.Guna2TextBox Au_login;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }
 

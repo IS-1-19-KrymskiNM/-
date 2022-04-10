@@ -129,7 +129,6 @@ namespace Проект
             this.password_2.SelectedText = "";
             this.password_2.Size = new System.Drawing.Size(233, 42);
             this.password_2.TabIndex = 5;
-            this.password_2.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // label
             // 
