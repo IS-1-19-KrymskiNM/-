@@ -30,7 +30,6 @@ namespace Проект
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(entry1));
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -65,7 +64,7 @@ namespace Проект
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(343, 240);
+            this.guna2Button1.Location = new System.Drawing.Point(352, 240);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(123, 27);
             this.guna2Button1.TabIndex = 0;
@@ -77,10 +76,10 @@ namespace Проект
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 44);
+            this.label1.Font = new System.Drawing.Font("SuperFrench", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.label1.Location = new System.Drawing.Point(289, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 44);
+            this.label1.Size = new System.Drawing.Size(247, 38);
             this.label1.TabIndex = 5;
             this.label1.Text = "CARSHERING\r\n";
             // 
@@ -99,7 +98,7 @@ namespace Проект
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline);
             this.guna2Button2.ForeColor = System.Drawing.Color.Blue;
             this.guna2Button2.IndicateFocus = true;
-            this.guna2Button2.Location = new System.Drawing.Point(343, 273);
+            this.guna2Button2.Location = new System.Drawing.Point(352, 273);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.Transparent;
             this.guna2Button2.Size = new System.Drawing.Size(123, 27);
@@ -164,7 +163,6 @@ namespace Проект
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(819, 533);
             this.Controls.Add(this.label1);
@@ -172,7 +170,7 @@ namespace Проект
             this.Controls.Add(this.Au_login);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Au_password);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MaximizeBox = false;
             this.Name = "entry1";
             this.Text = "Form1";
