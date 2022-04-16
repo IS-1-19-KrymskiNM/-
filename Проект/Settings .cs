@@ -50,5 +50,12 @@ namespace Проект
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            entry1 g = new entry1();
+            g.Show();
+            Hide();
+        }
     }
 }

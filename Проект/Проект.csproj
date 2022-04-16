@@ -216,6 +216,12 @@
     <Compile Include="Reg.Designer.cs">
       <DependentUpon>Reg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ride.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ride.Designer.cs">
+      <DependentUpon>Ride.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings .cs">
       <SubType>Form</SubType>
     </Compile>
