@@ -16,7 +16,7 @@ namespace Проект
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new entry1());
+            Application.Run(new test());
         }
     }
 }

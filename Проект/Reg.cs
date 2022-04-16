@@ -85,10 +85,5 @@ namespace Проект
         {
             Environment.Exit(0);
         }
-
-        private void Reg_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
