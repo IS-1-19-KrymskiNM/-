@@ -102,5 +102,10 @@ namespace Проект
         {
 
         }
+
+        private void entry1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

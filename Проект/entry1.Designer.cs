@@ -174,6 +174,7 @@ namespace Проект
             this.MaximizeBox = false;
             this.Name = "entry1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.entry1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
