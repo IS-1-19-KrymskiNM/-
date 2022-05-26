@@ -210,6 +210,12 @@
     <Compile Include="Classes\ConnLine.cs" />
     <Compile Include="Classes\DBConn.cs" />
     <Compile Include="Classes\Encryption.cs" />
+    <Compile Include="End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="End.Designer.cs">
+      <DependentUpon>End.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,9 @@
     <EmbeddedResource Include="Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="End.resx">
+      <DependentUpon>End.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reg.resx">
       <DependentUpon>Reg.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +278,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ride.resx">
+      <DependentUpon>Ride.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings .resx">
       <DependentUpon>Settings .cs</DependentUpon>
     </EmbeddedResource>

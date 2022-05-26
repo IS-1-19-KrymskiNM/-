@@ -19,12 +19,14 @@ namespace Проект
             if (flag == 1) sum = 2 * (60 * hours + mins);
             Ride g = new Ride();
             g.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             
+            Main m = new Main();
+            m.Show();
             if (flag == 0) MessageBox.Show("Ваша поездка была отменена.", "Отмена поездки");
             if (flag == 1)
             {
@@ -32,9 +34,7 @@ namespace Проект
                 string sum1 = Convert.ToString(sum);
                 MessageBox.Show("За платное ожидание Вами было оплачено " + sum1 + " рублей.", "Оплата поездки");
             }
-            Main m = new Main();
-            m.Show();
-            this.Close();
+            this.Hide();
         }
 
         //DateTime date1 = new DateTime(0, 0, 0);

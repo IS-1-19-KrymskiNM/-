@@ -108,9 +108,11 @@ namespace Проект
 
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
+        private void car_Click(object sender, EventArgs e)
         {
-
+            test t = new test();
+            t.Show();
+            Hide();
         }
     }
 } 

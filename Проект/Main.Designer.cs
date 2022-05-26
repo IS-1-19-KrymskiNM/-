@@ -39,7 +39,6 @@ namespace Проект
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.car = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.car)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +82,7 @@ namespace Проект
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(21, 380);
+            this.guna2Button1.Location = new System.Drawing.Point(21, 150);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 3;
@@ -154,7 +153,7 @@ namespace Проект
             this.car.RowHeadersVisible = false;
             this.car.RowTemplate.Height = 26;
             this.car.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.car.Size = new System.Drawing.Size(574, 294);
+            this.car.Size = new System.Drawing.Size(574, 460);
             this.car.TabIndex = 0;
             this.car.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.car.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -177,24 +176,7 @@ namespace Проект
             this.car.ThemeStyle.RowsStyle.Height = 26;
             this.car.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.car.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.AutoRoundedCorners = true;
-            this.guna2Button4.BorderRadius = 21;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(282, 318);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button4.TabIndex = 4;
-            this.guna2Button4.Text = "Профиль";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.car.Click += new System.EventHandler(this.car_Click);
             // 
             // Main
             // 
@@ -202,7 +184,6 @@ namespace Проект
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.car);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Main";
@@ -222,6 +203,5 @@ namespace Проект
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView car;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
